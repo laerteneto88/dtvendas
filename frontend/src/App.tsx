@@ -1,9 +1,19 @@
-function App() {
+import NavBar from 'components/NavBar/NavBar.component';
+import Footer from 'components/Footer/Footer.component';
+import DataTable from 'components/DataTable/DataTable.component';
+
+function App () {
   return (
-    <div>
-      
-    </div>
-  );
+    <>
+      <NavBar />
+      <div className="container">
+        <h1>Home</h1>
+
+        <DataTable />
+      </div>
+      <Footer />
+    </>
+  )
 }
 
-export default App;
+export default App
